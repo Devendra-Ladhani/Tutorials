@@ -27,11 +27,12 @@ function MyApp(){
  const anotherUser = "chai aur react"
  
  const reactElement = React.createElement(
-     'a',
-     {href: 'https://google.com',target: '_blank' },
-     'click me to visit google',
-     anotherElement
- )
+  'div',
+  {},
+  React.createElement('a', { href: 'https://google.com', target: '_blank' }, 'click me to visit google'),
+  anotherElement
+);
+
  ReactDOM.createRoot(document.getElementById('root')).render(
     reactElement
   )
